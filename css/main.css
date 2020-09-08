@@ -21,7 +21,8 @@ html {
     font-weight: 100;
 }
 body {
-    width: 80%;
+    max-width: 1440px;
+    width: 100%;
     margin: auto;
     background-color: #151513;
     background-position: 0px 50px;
@@ -83,7 +84,7 @@ svg {
     margin-right: auto;
     text-align: center;
     margin-top: 225px;
-    margin-bottom: 225px;
+    margin-bottom: 75px;
     width: fit-content;
     height: fit-content;
     justify-content: center;
@@ -102,6 +103,14 @@ p {
     letter-spacing: 10px;
     font-weight: 100;
 }
+.arrow {
+    margin-top: 350px;
+    fill: none;
+    stroke: #C9AD88;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    transform: scale(2.5);
+}
 .icons {
     position: absolute;
     display: block;
@@ -114,18 +123,18 @@ p {
     width: fit-content;
     height: fit-content;
     justify-content: center;
+    background-color: #C9AD88;  
     display: flex;
-    background-color: #C9AD88;
+    flex-wrap: wrap;
 }
 .video-group1 {
-    display: inline;
+
 }
 .video-group2 {
-    display: inline;
+
 }
 .youtube-link {
-    width: 356px;
-    height: 200px;
+    line-height: 0px;
 }
 .youtube-link:hover {
     opacity:0.5;
