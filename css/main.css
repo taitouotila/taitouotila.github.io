@@ -113,6 +113,7 @@ p {
     bottom: 40px;
     left: 50%;
     position: absolute;
+    cursor: pointer;
 
 }
 .arrow:hover {
@@ -129,6 +130,7 @@ p {
 }
 .youtube-link {
     width: 50%;
+    cursor: pointer;
 }
 .youtube-link:hover {
     opacity:0.5;
