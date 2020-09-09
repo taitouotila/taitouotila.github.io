@@ -81,11 +81,7 @@ body {
 .st0 {
     fill:#151513;
 }
-.st1 {
-    fill:#C9AD88;
-}
 svg {
-    padding-top: 3px;
     width: 19px;
     height: 19px;
     fill: #C9AD88;
@@ -114,10 +110,10 @@ p {
     stroke-width: 3;
     stroke-miterlimit: 10;
     transform: scale(2.5);
-    position: absolute;
-    left: 50%;
     bottom: 40px;
-    margin: 0 auto;
+    left: 50%;
+    position: absolute;
+
 }
 .arrow:hover {
     stroke: #ffffff;
@@ -129,6 +125,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     line-height: 0px;
+    justify-content: space-between;
 }
 .youtube-link {
     width: 50%;
@@ -137,7 +134,7 @@ p {
     opacity:0.5;
 }
 img {
-    max-width:100%;
+    width: 100%;
 }
 
 /*---------- YOUTUBE POP-UP FRAME ----------*/
