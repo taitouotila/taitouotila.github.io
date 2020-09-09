@@ -56,3 +56,26 @@
 	};
 
 }( jQuery ));
+
+$(".youtube-link").grtyoutube();
+
+
+
+// On click "work" or "arrow" to scroll to videos
+$(".work").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $(".video-container").offset().top,
+    },
+    "slow"
+  );
+});
+
+$(".arrow").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $(".video-container").offset().top,
+    },
+    "slow"
+  );
+});
