@@ -97,14 +97,12 @@ svg {
     text-align: center;
     padding-top: 150px;
 }
-
 h1 {
     font-size: 80px;
     color: #ffffff;
     letter-spacing: 5px;
     font-family: "brandon_grotesqueblack", sans-serif;
 }
-
 p {
     font-size: 33px;
     color: #C9AD88;
@@ -124,14 +122,22 @@ p {
 .arrow:hover {
     stroke: #ffffff;
 }
+
+/*---------- VIDEO CONTAINER BEHAVIOR ----------*/
 .video-container {
     background-color: #C9AD88;
     display: flex;
     flex-wrap: wrap;
     line-height: 0px;
 }
+.youtube-link {
+    width: 50%;
+}
 .youtube-link:hover {
     opacity:0.5;
+}
+img {
+    max-width:100%;
 }
 
 /*---------- YOUTUBE POP-UP FRAME ----------*/
