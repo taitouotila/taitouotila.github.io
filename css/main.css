@@ -44,17 +44,36 @@ body {
     background-repeat: no-repeat;
     height: 100%;
 }
+.frontpage {
+    min-height: 100%;
+}
+
+/*---------- NAVIGATION ----------*/
 .nav {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 81px;
     font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
     font-weight: 700;
     letter-spacing: 5px;
-    position: relative;
+    margin-top: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.work {
+    width: 100px;
+    margin-top: 13px;
+    text-align: right;
+    padding-right: 2%;
+}
+.about {
+    width: 100px;
+    margin-top: 13px;
+    text-align: left;
+    padding-left: 2%;
 }
 .nav a {
     color: #C9AD88;
@@ -63,32 +82,12 @@ body {
 .nav a:hover {
     color: #ffffff;
 }
-.work {
-    padding-right: 63px;
-}
-.logo {
-    display: inline-block;
-    width: fit-content;
-    height: fit-content;
-}
-.logo img {
+.menu img {
     width: 55px;
     height: auto;
 }
-.about {
-    padding-left: 63px;
-}     
-.st0 {
-    fill:#151513;
-}
-svg {
-    width: 19px;
-    height: 19px;
-    fill: #C9AD88;
-}
-.frontpage {
-    min-height: 100%;
-}
+
+/*---------- HEADER ----------*/
 .header {
     text-align: center;
     padding-top: 150px;
@@ -103,6 +102,19 @@ p {
     font-size: 33px;
     color: #C9AD88;
     letter-spacing: 10px;
+}
+@media only screen and (max-width: 600px) {
+    p {
+        letter-spacing: 3px;
+    }
+}
+.st0 {
+    fill:#151513;
+}
+svg {
+    width: 19px;
+    height: 19px;
+    fill: #C9AD88;
 }
 .arrow {
     fill: none;
@@ -121,7 +133,6 @@ p {
 }
 
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
-
 .video-container {
     background-color: #C9AD88;
     display: flex;
@@ -146,7 +157,6 @@ img {
     }
     .youtube-link {
         width: 100%;
-        cursor: pointer;
     }
 }
 
