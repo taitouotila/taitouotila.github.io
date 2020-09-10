@@ -121,6 +121,7 @@ p {
 }
 
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
+
 .video-container {
     background-color: #C9AD88;
     display: flex;
@@ -137,6 +138,16 @@ p {
 }
 img {
     width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .video-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .youtube-link {
+        width: 100%;
+        cursor: pointer;
+    }
 }
 
 /*---------- YOUTUBE POP-UP FRAME ----------*/
