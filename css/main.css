@@ -112,9 +112,9 @@ p {
     transform: scale(2.5);
     bottom: 40px;
     left: 50%;
+    padding-right: 12px;
     position: absolute;
     cursor: pointer;
-
 }
 .arrow:hover {
     stroke: #ffffff;
