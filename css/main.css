@@ -82,7 +82,7 @@ body {
 .nav a:hover {
     color: #ffffff;
 }
-.menu img {
+.logo img {
     width: 55px;
     height: auto;
 }
@@ -90,7 +90,7 @@ body {
 /*---------- HEADER ----------*/
 .header {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 100px;
 }
 h1 {
     font-size: 80px;
@@ -103,11 +103,7 @@ p {
     color: #C9AD88;
     letter-spacing: 10px;
 }
-@media only screen and (max-width: 600px) {
-    p {
-        letter-spacing: 3px;
-    }
-}
+
 .st0 {
     fill:#151513;
 }
@@ -132,6 +128,14 @@ svg {
     stroke: #ffffff;
 }
 
+@media only screen and (max-width: 640px) {
+    p {
+        font-size: 23px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+}
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
 .video-container {
     background-color: #C9AD88;
@@ -150,7 +154,8 @@ svg {
 img {
     width: 100%;
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 640px) {
     .video-container {
         flex-direction: column;
         width: 100%;
@@ -211,4 +216,38 @@ img {
 }
 */
 
-/*---------- NEW THING ----------*/
+/*---------- FOOTER ----------*/
+footer {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 81px;
+}
+.footer-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.copyright {
+    font-family: "brandon_grotesqueblack", sans-serif;
+    color: #C9AD88;
+    font-size: 18px;
+    font-weight: 700;
+    width: 200px;
+    margin-top: 13px;
+    text-align: right;
+    padding-right: 50px;
+}
+.linkedin {
+    width: 200px;
+    margin-left: 50px;
+    
+}
+.linkedin img {
+    width: 20px;
+    margin-top: 13px;
+    fill: #ffffff;
+}
