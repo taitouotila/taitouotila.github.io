@@ -104,14 +104,9 @@ p {
     color: #C9AD88;
     letter-spacing: 10px;
 }
-
-.st0 {
-    fill: none;
-}
 .arrow svg {
     width: 19px;
     height: 19px;
-    fill: #C9AD88;
 }
 .arrow {
     fill: none;
@@ -121,7 +116,7 @@ p {
     transform: scale(2.5);
     bottom: 40px;
     left: 50%;
-    padding-right: 12px;
+    padding-right: 15px;
     position: absolute;
     cursor: pointer;
 }
