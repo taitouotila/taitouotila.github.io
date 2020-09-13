@@ -85,6 +85,7 @@ body {
 .logo img {
     width: 55px;
     height: auto;
+    cursor: pointer;
 }
 
 /*---------- HEADER ----------*/
@@ -105,7 +106,7 @@ p {
 }
 
 .st0 {
-    fill:#151513;
+    fill: none;
 }
 svg {
     width: 19px;
@@ -246,8 +247,35 @@ footer {
     margin-left: 50px;
     
 }
-.linkedin img {
-    width: 20px;
-    margin-top: 13px;
-    fill: #ffffff;
+.linkedin svg {
+    margin-top: 14px;
+    fill: #C9AD88;
+}
+.linkedin g {
+    fill: #C9AD88;
+}
+.linkedin g:hover {
+    fill: #0077b5;
+}
+
+/*---------- NEW THING ----------*/
+
+.arrow-top {
+    fill: none;
+    stroke: #C9AD88;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    transform: scale(2.5);
+    bottom: 40px;
+    right: 5%;
+    padding-right: 12px;
+    position: fixed;
+    cursor: pointer;
+}
+.arrow-top:hover {
+    stroke: #ffffff;
+}
+
+.svg-top {
+    transform: rotate(180deg);
 }

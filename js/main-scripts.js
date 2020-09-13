@@ -6,7 +6,6 @@
  * Copyright (c) 2017 GRT107
  * Released under the MIT license
 */
-
 (function ( $ ) {
 
 	$.fn.grtyoutube = function( options ) {
@@ -61,7 +60,7 @@ $(".youtube-link").grtyoutube();
 
 
 
-// On click "work" or "arrow" to scroll to videos
+// On click scroll behaviors
 $(".work").click(function () {
   $("html,body").animate(
     {
@@ -79,3 +78,22 @@ $(".arrow").click(function () {
     "slow"
   );
 });
+
+$(".logo").click(function () {
+	$("html,body").animate(
+	  {
+		scrollTop: $(".frontpage").offset().top,
+	  },
+	  "slow"
+	);
+  });
+
+  $(".arrow-top").click(function () {
+	$("html,body").animate(
+	  {
+		scrollTop: $(".frontpage").offset().top,
+	  },
+	  "slow"
+	);
+  });
+  
