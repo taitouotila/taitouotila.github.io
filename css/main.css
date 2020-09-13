@@ -144,7 +144,7 @@ p {
     width: 50%;
     cursor: pointer;
 }
-.youtube-link:hover {
+.youtube-link img:hover {
     opacity:0.3;
     transition: .3s ease;
     
@@ -152,7 +152,18 @@ p {
 img {
     width: 100%;
 }
-
+.video-text {
+    font-family: "brandon_grotesqueblack", sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+}
+.youtube-link:hover .video-text {
+    opacity: 1;
+}
 @media only screen and (max-width: 640px) {
     .video-container {
         flex-direction: column;
