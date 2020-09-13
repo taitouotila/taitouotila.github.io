@@ -134,7 +134,7 @@ p {
 }
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
 .video-container {
-    background-color: #C9AD88;
+    background-color: #151513;
     display: flex;
     flex-wrap: wrap;
     line-height: 0px;
@@ -145,7 +145,8 @@ p {
     cursor: pointer;
 }
 .youtube-link:hover {
-    opacity:0.5;
+    opacity:0.3;
+    transition: .3s ease;
     
 }
 img {
