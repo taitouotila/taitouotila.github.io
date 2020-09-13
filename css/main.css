@@ -108,7 +108,7 @@ p {
 .st0 {
     fill: none;
 }
-svg {
+.arrow svg {
     width: 19px;
     height: 19px;
     fill: #C9AD88;
@@ -250,6 +250,8 @@ footer {
 .linkedin svg {
     margin-top: 14px;
     fill: #C9AD88;
+    width: 19px;
+    height: 19px;
 }
 .linkedin g {
     fill: #C9AD88;
@@ -258,24 +260,24 @@ footer {
     fill: #0077b5;
 }
 
-/*---------- NEW THING ----------*/
-
+/*---------- BACK TO TOP ARROW ----------*/
 .arrow-top {
     fill: none;
     stroke: #C9AD88;
     stroke-width: 3;
     stroke-miterlimit: 10;
-    transform: scale(2.5);
     bottom: 40px;
     right: 5%;
-    padding-right: 12px;
     position: fixed;
     cursor: pointer;
 }
 .arrow-top:hover {
     stroke: #ffffff;
 }
-
 .svg-top {
     transform: rotate(180deg);
+    width: 47.5px;
+    height: 47.5px;
 }
+
+/*---------- NEW THING ----------*/
