@@ -47,16 +47,23 @@
 
     <!-- ABOUT ME -->
     <div class="about-me" id="about-me">
-      <div class="contactForm">
-        <form method="POST" action="https://formspree.io/xdopnpyj">
-          <h2 class="contact-form-title">CONTACT ME</h2>
-          <input type="email" name="email" placeholder="Email">
-          <input type="text" name="name" value="" placeholder="Name">
-          <textarea name="message" placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-          </form>
-      </div>
-    </div>
+      <form id="contactform" method="POST">
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">Name</span>
+                <input name="form-name-input" type="text" name="name" class="form-control" required>
+                    </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Email</span>
+                    <input name="form-email-input" type="email" name="_replyto" class="form-control" required>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">Message</span>
+                            <textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <button id="sendMessage">Send</button>
+                            </div>
 
     <!-- FOOTER -->
     <footer>
