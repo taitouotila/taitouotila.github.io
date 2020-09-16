@@ -48,13 +48,14 @@
     <!-- ABOUT ME -->
     <div class="about-me" id="about-me">
       <div class="contactForm">
-        <form action="mail.php" method="POST">
+        <form method="POST" action="http://formspree.io/taito.uotila@gmail.com">
           <h2 class="contact-form-title">CONTACT ME</h2>
-          <input type="text" name="name" placeholder="NAME"><br />
-          <input type="text" name="email" placeholder="EMAIL ADDRESS"><br />
-          <textarea name="message" rows="6" cols="25" placeholder="YOUR MESSAGE..."></textarea><br />
-          <input type="submit" value="SEND">
-        </form>
+          <input type="email" name="email" placeholder="Email">
+          <input type="text" name="first name" value="" placeholder="First Name">
+          <input type="text" name="last name" value="" placeholder="Last Name">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+          </form>
       </div>
     </div>
 
