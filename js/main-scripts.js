@@ -112,7 +112,7 @@ var message = "";
 $("#sendMessage").on("click", function() {
     message = $("#contactform").serialize();
     $.ajax({
-        url: "//formspree.io/taito.uotila@gmail.com", 
+        url: "https://formspree.io/xdopnpyj", 
         method: "POST",
         data: {message: message},
         dataType: "json"
