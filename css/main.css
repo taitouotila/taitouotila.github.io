@@ -240,29 +240,76 @@ img {
 .about-me {
     padding-top: 150px;
     display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
 }
 
 /*---------- CONTACT FORM ----------*/
 .contact-form-title {
     font-family: "brandon_grotesqueblack", sans-serif;
     color: #ffffff;
-    font-size: 28px;
+    font-size: 33px;
+    margin:0 auto;
+    margin-bottom: 50px;
 }
-input[placeholder], textarea[placeholder] {
-    font-family: "brandon_grotesqueblack", sans-serif;
-    color: #C9AD88;
+.contact-form {
+    margin:0 auto;
+    max-width: 600px;
+}
+.contact-form-name {
+    border-bottom: 2px solid #C9AD88;
+    margin-bottom: 65px;
+}
+.contact-form-email {
+    border-bottom: 2px solid #C9AD88;
+    margin-bottom: 30px;
+}
+.contact-form-message {
+    width: 50vw;
+    max-width: 600px;
+    border-bottom: 2px solid #C9AD88;
+    margin-bottom: 65px;
+}
+#my-form, textarea {
+    font-family: "brandon_grotesquemedium", sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    width: 100%;
+}
+#my-form-button {
+    font-family: "brandon_grotesqueblack", sans-serif;
+    font-size: 25px;
+    color: #C9AD88;
+}
+#my-form-button:hover {
+    color: #ffffff;
+}
+#my-form-status {
+    color: #C9AD88;
+}
+::placeholder {
+    color: #C9AD88;
+}
+textarea::placeholder {
+    transform: translateY(33px);
+}
+textarea::-webkit-scrollbar {
+    display: none;
+}
+input:focus, textarea:focus { 
+    color: #FFFFFF;
+}
+button:hover {
+    cursor: pointer;
+}
+input, textarea {
+    font-family: "brandon_grotesquemedium", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+}
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
 }
 
- input[type=text], input[type=email], textarea[name=message], button[id=sendMessage] {
-    font-family: "brandon_grotesquemedium", sans-serif;
-    background-color: transparent; /* Remove background fill */
-    border-radius: 0; /* Remove corner curve */
-    border: 2px solid #C9AD88; /* 2px white border */
-    color: #fff; /* White text */
-    height: 45px; /* Increase input height */
- }
 /*---------- FOOTER ----------*/
 footer {
     font-size: 18px;
