@@ -64,13 +64,13 @@ body {
     width: 100px;
     margin-top: 13px;
     text-align: right;
-    padding-right: 50px;
+    padding-right: 60px;
 }
 .about {
     width: 100px;
     margin-top: 13px;
     text-align: left;
-    padding-left: 57px;
+    padding-left: 67px;
 }
 .nav a {
     color: #C9AD88;
@@ -79,10 +79,11 @@ body {
 .nav a:hover {
     color: #ffffff;
 }
-.logo img {
-    width: 55px;
+.logo svg{
+    width: 60px;
     height: auto;
     cursor: pointer;
+    fill: #C9AD88;
 }
 
 /*---------- HEADER ----------*/
@@ -90,8 +91,6 @@ body {
     min-height: 100%;
     text-align: center;
     align-items: center;
-    
- 
 }
 .header {
 

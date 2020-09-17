@@ -92,7 +92,7 @@ $(".arrow").click(function () {
   );
 });
 
-$(".logo").click(function () {
+$("#footerLogo").click(function () {
   $("html,body").animate(
     {
       scrollTop: $(".frontpage").offset().top,
