@@ -112,11 +112,11 @@ var message = "";
 $("#sendMessage").on("click", function() {
     message = $("#contactform").serialize();
     $.ajax({
-        url: "https://formspree.io/xdopnpyj", 
+        url: "//formspree.io/xdopnpyj", 
         method: "POST",
         data: {message: message},
         dataType: "json"
     });
-    alert('Thanks for the email, I\'ll be in touch promptly.');
+    alert('Thanks for the email, I\'ll be in touch shortly.');
     return false;
 });
