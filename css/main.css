@@ -44,9 +44,6 @@ body {
     background-repeat: no-repeat;
     height: 100%;
 }
-.frontpage {
-    min-height: 100%;
-}
 
 /*---------- NAVIGATION ----------*/
 .nav {
@@ -89,9 +86,18 @@ body {
 }
 
 /*---------- HEADER ----------*/
-.header {
+.frontpage {
+    min-height: 100%;
     text-align: center;
-    padding-top: 100px;
+    align-items: center;
+    
+ 
+}
+.header {
+
+}
+.header-text {
+    margin-top: 250px;
 }
 h1 {
     font-size: 80px;
@@ -124,12 +130,14 @@ h1 {
     stroke: #ffffff;
 }
 
-@media only screen and (max-width: 640px) {
-    p {
+@media only screen and (max-width: 599px) {
+    .title {
         font-size: 23px;
+        letter-spacing: 5px;
+        display: block;
     }
     h1 {
-        font-size: 60px;
+        display: block;
     }
 }
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
@@ -175,7 +183,9 @@ img {
 .youtube-link:hover .video-text, .youtube-link:hover .video-info {
     opacity: 1;
     transition: .5s ease;
+    pointer-events: none;
 }
+
 @media only screen and (max-width: 640px) {
     .video-container {
         flex-direction: column;
@@ -376,7 +386,18 @@ footer {
     #footerLogo {
         visibility: hidden;
     }
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .linkedin {
+        margin-left: 0px;
+    }
+    .copyright {
+        text-align: center;
+    }
 }
+
 /*---------- BACK TO TOP ARROW ----------*/
 .arrow-top {
     fill: none;
