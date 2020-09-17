@@ -79,16 +79,16 @@
     <div class="contact-form-title">CONTACT ME</div>
     <div class="contact-form">
       <form id="my-form" action="https://formspree.io/xdopnpyj" method="POST">
-        <div class="contact-form-name">
-          <input type="text" name="name" size="30" placeholder="NAME" />
+        <div class="contact-form-name" data-aos="fade-up" data-aos-duration="650" data-aos-offset="60">
+          <input type="text" name="name" size="30" placeholder="NAME" required/>
         </div>
-        <div class="contact-form-email">
-          <input type="email" name="email" size="30" placeholder="EMAIL" />
+        <div class="contact-form-email" data-aos="fade-up" data-aos-duration="750" data-aos-offset="60">
+          <input type="email" name="email" size="30" placeholder="EMAIL" required/>
         </div>
-        <div class="contact-form-message">
-          <textarea name="message" placeholder="MESSAGE"></textarea>
+        <div class="contact-form-message" data-aos="fade-up" data-aos-duration="850" data-aos-offset="60">
+          <textarea name="message" placeholder="MESSAGE" rows="1" required></textarea>
         </div>
-        <div class="contact-form-button">
+        <div class="contact-form-button" data-aos="fade-up" data-aos-duration="950" data-aos-offset="60">
           <button id="my-form-button">SEND</button>
         </div>
         <p id="my-form-status"></p>
@@ -100,7 +100,7 @@
   <footer>
     <div class="footer-menu">
       <div class="copyright">&copy; 2020 TAITO UOTILA</div>
-      <div class="logo">
+      <div class="logo" id="footerLogo">
         <img src="images/TU_logo.png" alt="Logo" title="Taito Uotila" />
       </div>
       <div class="social">

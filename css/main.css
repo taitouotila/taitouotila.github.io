@@ -253,8 +253,10 @@ img {
     margin-bottom: 50px;
 }
 .contact-form {
-    margin:0 auto;
+    width: 50vw;
     max-width: 600px;
+    margin:0 auto;
+    caret-color: #C9AD88;
 }
 .contact-form-name {
     border-bottom: 2px solid #C9AD88;
@@ -262,11 +264,9 @@ img {
 }
 .contact-form-email {
     border-bottom: 2px solid #C9AD88;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 .contact-form-message {
-    width: 50vw;
-    max-width: 600px;
     border-bottom: 2px solid #C9AD88;
     margin-bottom: 65px;
 }
@@ -290,21 +290,21 @@ img {
     color: #C9AD88;
 }
 textarea::placeholder {
-    transform: translateY(33px);
+    transform: translateY(7px);
 }
 textarea::-webkit-scrollbar {
     display: none;
 }
-input:focus, textarea:focus { 
-    color: #FFFFFF;
-}
 button:hover {
     cursor: pointer;
 }
+
 input, textarea {
     font-family: "brandon_grotesquemedium", sans-serif;
     color: #ffffff;
     font-size: 18px;
+    max-width: 600px;
+    resize: none;
 }
 input:focus::placeholder, textarea:focus::placeholder {
     color: transparent;
@@ -339,7 +339,6 @@ footer {
 }
 .social {
     display: flex;
-
 }
 .logo {
     position: absolute;
@@ -371,6 +370,12 @@ footer {
 }
 .email svg:hover {
     fill: #ffffff;
+}
+
+@media only screen and (max-width: 640px) {
+    #footerLogo {
+        visibility: hidden;
+    }
 }
 /*---------- BACK TO TOP ARROW ----------*/
 .arrow-top {

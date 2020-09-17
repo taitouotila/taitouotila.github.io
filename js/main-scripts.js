@@ -79,7 +79,7 @@ $(".work").click(function () {
     {
       scrollTop: $(".video-container").offset().top,
     },
-    "slow"
+    500
   );
 });
 
@@ -88,7 +88,7 @@ $(".arrow").click(function () {
     {
       scrollTop: $(".video-container").offset().top,
     },
-    "slow"
+    500
   );
 });
 
@@ -97,7 +97,7 @@ $(".logo").click(function () {
     {
       scrollTop: $(".frontpage").offset().top,
     },
-    "slow"
+    750
   );
 });
 
@@ -106,7 +106,7 @@ $(".arrow-top").click(function () {
     {
       scrollTop: $(".frontpage").offset().top,
     },
-    "slow"
+    750
   );
 });
 
@@ -115,7 +115,7 @@ $(".about").click(function () {
     {
       scrollTop: $(".about-me").offset().top,
     },
-    "slow"
+    750
   );
 });
 
@@ -133,7 +133,7 @@ window.addEventListener("DOMContentLoaded", function () {
   function success() {
     form.reset();
     button.style = "display: none ";
-    status.innerHTML = "Thanks for your email!";
+    status.innerHTML = "Thanks for your email.";
   }
 
   function error() {
@@ -165,3 +165,12 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
+
+
+// Contact form textarea resize based on line amount
+$('textarea').each(function () {
+  this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+}).on('input', function () {
+  this.style.height = 'auto';
+  this.style.height = (this.scrollHeight) + 'px';
+});
