@@ -38,8 +38,9 @@ html {
     margin: 0;
 }
 body {
+    background-image: url("/images/TaitoBG.jpg");
     background-color: #151513;
-    background-position: 0px 50px;
+    background-position: 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -73,11 +74,11 @@ body {
     padding-left: 67px;
 }
 .nav a {
-    color: #C9AD88;
+    color: #ffffff;
     text-decoration: none;
 }
 .nav a:hover {
-    color: #ffffff;
+    color: #C9AD88;
 }
 .logo svg{
     width: 60px;
@@ -100,13 +101,13 @@ body {
 }
 h1 {
     font-size: 80px;
-    color: #ffffff;
+    color: #C9AD88;
     letter-spacing: 5px;
     font-family: "brandon_grotesqueblack", sans-serif;
 }
 .title {
     font-size: 33px;
-    color: #C9AD88;
+    color: #ffffff;
     letter-spacing: 10px;
 }
 .arrow svg {
@@ -251,6 +252,7 @@ img {
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+    background-color: #151513;
 }
 
 /*---------- CONTACT FORM ----------*/
@@ -268,17 +270,13 @@ img {
     margin:0 auto;
     caret-color: #C9AD88;
 }
-.contact-form-name {
+.contact-form-name, .contact-form-message {
     border-bottom: 2px solid #C9AD88;
     margin-bottom: 65px;
 }
 .contact-form-email {
     border-bottom: 2px solid #C9AD88;
     margin-bottom: 55px;
-}
-.contact-form-message {
-    border-bottom: 2px solid #C9AD88;
-    margin-bottom: 65px;
 }
 #my-form, textarea {
     font-family: "brandon_grotesquemedium", sans-serif;
