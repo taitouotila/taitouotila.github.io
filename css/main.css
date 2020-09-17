@@ -238,7 +238,6 @@ img {
 */
 /*---------- ABOUT ME ----------*/
 .about-me {
-    padding-top: 150px;
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
@@ -251,6 +250,7 @@ img {
     font-size: 33px;
     margin:0 auto;
     margin-bottom: 50px;
+    margin-top: 100px;
 }
 .contact-form {
     width: 50vw;
@@ -264,7 +264,7 @@ img {
 }
 .contact-form-email {
     border-bottom: 2px solid #C9AD88;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 .contact-form-message {
     border-bottom: 2px solid #C9AD88;
@@ -290,7 +290,7 @@ img {
     color: #C9AD88;
 }
 textarea::placeholder {
-    transform: translateY(7px);
+    transform: translateY(14px);
 }
 textarea::-webkit-scrollbar {
     display: none;
@@ -318,8 +318,8 @@ input:-webkit-autofill, select:-webkit-autofill {
 footer {
     font-size: 18px;
     font-weight: 700;
-    padding-top: 81px;
-    margin-bottom: 81px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
 }
 .footer-menu {
