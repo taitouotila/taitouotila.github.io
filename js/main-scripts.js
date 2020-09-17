@@ -105,4 +105,3 @@ $(".logo").click(function () {
 	  "slow"
 	);
   });
-

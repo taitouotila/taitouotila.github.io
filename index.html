@@ -67,15 +67,14 @@
 
   <!-- ABOUT ME -->
   <div class="about-me" id="about-me">
-    <div class="kwes-form">
-      <form id="contactform" method="POST" action="https://kwes.io/api/foreign/forms/ky2WpUfCtH8Gevpuri3I">
-        <h2 class="contact-form-title">CONTACT ME</h1>
-        <input type="text" name="Name" placeholder="NAME" rules="required|max:255">
-        <input type="email" name="Email" placeholder="EMAIL ADDRESS" rules="required|max:255">
-        <textarea name="Message" placeholder="MESSAGE"></textarea>
-        <button type="submit" id="sendMessage">SEND</button>
-      </form>
-    </div>
+    <form id="contactform" method="POST">
+      <h2 class="contact-form-title">CONTACT ME</h1>
+      <input type="text" name="Name" placeholder="NAME">
+      <input type="email" name="_replyto" placeholder="EMAIL ADDRESS">
+      <input type="hidden" name="_next" value="//www.taitouotila.com/#about-me" />
+      <textarea name="Message" placeholder="MESSAGE"></textarea>
+      <button id="sendMessage">SEND</button>
+    </form>
   </div>
 
       <!-- FOOTER -->
