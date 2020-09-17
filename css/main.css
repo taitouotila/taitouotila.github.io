@@ -112,6 +112,7 @@ h1 {
 .arrow svg {
     width: 19px;
     height: 19px;
+    overflow: visible;
 }
 .arrow {
     fill: none;
@@ -415,6 +416,7 @@ footer {
     transform: rotate(180deg);
     width: 47.5px;
     height: 47.5px;
+    overflow: visible;
 }
 
 /*---------- NEW THING ----------*/
