@@ -98,7 +98,7 @@ body {
     -webkit-transition-property: box-shadow;
     transition-property: box-shadow;
   }
-  .work a:hover, .work a:focus, .work a:active,  .about a:hover, .about a:focus, .about a:active, .taito {
+  .work a:hover, .work a:focus, .work a:active,  .about a:hover, .about a:focus, .about a:active {
     box-shadow: 0 10px 10px -10px #ffe6c6;
   }
 
