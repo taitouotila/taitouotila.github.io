@@ -95,7 +95,7 @@ $(".arrow").click(function () {
 $("#footerLogo").click(function () {
   $("html,body").animate(
     {
-      scrollTop: $(".frontpage").offset().top,
+      scrollTop: $("html").offset().top,
     },
     750
   );
@@ -104,7 +104,7 @@ $("#footerLogo").click(function () {
 $(".arrow-top").click(function () {
   $("html,body").animate(
     {
-      scrollTop: $(".frontpage").offset().top,
+      scrollTop: $("html").offset().top,
     },
     750
   );
