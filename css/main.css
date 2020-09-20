@@ -68,13 +68,13 @@ body {
 .work {
     width: 100px;
     margin-top: 13px;
-    text-align: right;
+    text-align: center;
     padding-right: 60px;
 }
 .about {
     width: 100px;
     margin-top: 13px;
-    text-align: left;
+    text-align: center;
     padding-left: 67px;
 }
 .nav a {
@@ -82,7 +82,6 @@ body {
     text-decoration: none;
     position: relative;
 }
-
 .logo svg {
     width: 60px;
     height: auto;
@@ -90,16 +89,15 @@ body {
     fill: #C9AD88;
 }
 .work a, .about a {
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px #151513;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow;
-    transition-property: box-shadow;
+    -webkit-transition-property: box-shadow, letter-spacing;
+    -webkit-transition-duration: 0.3s, 0.5s;
+    transition-property: box-shadow, letter-spacing;
+    transition-duration: 0.5s, 0.5s;
   }
   .work a:hover, .work a:focus, .work a:active,  .about a:hover, .about a:focus, .about a:active {
     box-shadow: 0 10px 10px -10px #ffe6c6;
+    letter-spacing: 7px;
   }
 
 /*---------- HEADER ----------*/
@@ -286,21 +284,58 @@ img {
 */
 /*---------- ABOUT ME ----------*/
 .about-me {
+    background-color: #151513;
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px;
-    background-color: #151513;
+    min-height: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+.my-info {
+    font-size: 23px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+.contact-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+.contact-icon-svg {
+    fill: #C9AD88;
+    width: 35px;
+    height: 35px;
+}
+.contact-icon-svg:hover {
+    fill: #ffffff;
+}
+.contact {
+    min-height: 100%;
+}
+.contact-below {
+    position: absolute;
+    left: 50%;
+    bottom: 110px;
+    margin-left: -185px;
+    font-size: 18px;
 
+}
 /*---------- CONTACT FORM ----------*/
 .contact-form-title {
     color: #ffffff;
     margin:0 auto;
     margin-bottom: 50px;
-    margin-top: 100px;
+    padding-top: 70px;
     font-size: 23px;
     font-weight: 700;
     letter-spacing: 5px;
+    text-align: center;
 }
 .contact-form {
     width: 50vw;
@@ -325,10 +360,18 @@ img {
     font-family: "brandon_grotesqueblack", sans-serif;
     font-size: 23px;
     color: #ffffff;
+
+    box-shadow: 0 0 1px #151513;
+    -webkit-transition-property: box-shadow, letter-spacing;
+    -webkit-transition-duration: 0.3s, 0.5s;
+    transition-property: box-shadow, letter-spacing;
+    transition-duration: 0.3, 0.5s;
 }
-#my-form-button:hover {
-    color: #C9AD88;
-}
+#my-form-button:hover, #my-form-button:focus, #my-form-button:active {
+    box-shadow: 0 10px 10px -10px #ffe6c6;
+    letter-spacing: 2px;
+  }
+
 #my-form-status {
     color: #C9AD88;
 }
@@ -364,8 +407,7 @@ input:-webkit-autofill, select:-webkit-autofill {
 footer {
     font-size: 18px;
     font-weight: 700;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 125px;
     display: flex;
 }
 .footer-menu {

@@ -119,6 +119,14 @@ $(".about").click(function () {
   );
 });
 
+$(".contact-icon").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $(".contact-form-title").offset().top,
+    },
+    750
+  );
+});
 // Formspree contact form
 
 window.addEventListener("DOMContentLoaded", function () {
