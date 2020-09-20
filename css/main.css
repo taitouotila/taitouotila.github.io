@@ -164,8 +164,8 @@ h1 {
   }
   .arrow svg:hover, .arrow svg:focus, .arrow svg:active {
     stroke: #ffffff;
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
   }
 
 @media only screen and (max-width: 599px) {
@@ -467,6 +467,7 @@ footer {
   }
   .arrow-top svg:hover, .arrow-top svg:focus, .arrow-top svg:active {
     stroke: #ffffff;
-    transform: rotate(180deg) translateY(20px);
+    -webkit-transform: rotate(180deg) translateY(15px);
+    transform: rotate(180deg) translateY(15px);
   }
 /*---------- NEW THING ----------*/
