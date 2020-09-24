@@ -467,7 +467,7 @@ footer {
     fill: #ffffff;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 820px) {
     #footerLogo {
         visibility: hidden;
     }
