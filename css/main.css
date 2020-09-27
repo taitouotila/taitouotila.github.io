@@ -58,10 +58,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 5px;
-    padding-top: 81px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 4em;
 }
 .menu {
     flex: 1;
@@ -70,15 +67,15 @@ body {
 }
 .work {
     width: 100px;
-    margin-top: 13px;
+    margin-top: .8em;
     text-align: center;
-    padding-right: 60px;
+    padding-right: 4em;
 }
 .about {
     width: 100px;
-    margin-top: 13px;
+    margin-top: .8em;
     text-align: center;
-    padding-left: 67px;
+    padding-left: 4em;
 }
 .nav a {
     color: #ffffff;
@@ -92,7 +89,7 @@ body {
     fill: #C9AD88;
 }
 .work a, .about a {
-    box-shadow: 0 0 1px #151513;
+    box-shadow: 0 0 0px #151513;
     -webkit-transition-property: box-shadow, letter-spacing;
     -webkit-transition-duration: 0.3s, 0.5s;
     transition-property: box-shadow, letter-spacing;
@@ -105,32 +102,24 @@ body {
 
 /*---------- HEADER ----------*/
 .frontpage {
-    min-height: 100%;
-    text-align: center;
-    align-items: center;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 90%;
+    grid-template-rows: 40%;
 }
 .header {
 
 }
 .header-text {
-    margin-top: 220px;
+    text-align: center;
     font-size: 23px;
     color: #ffffff;
     letter-spacing: 2px;
 }
 .taito1 {
     color: #C9AD88
-}
-h1 {
-    font-size: 80px;
-    color: #C9AD88;
-    letter-spacing: 5px;
-    font-family: "brandon_grotesqueblack", sans-serif;
-}
-.title {
-    font-size: 33px;
-    color: #ffffff;
-    letter-spacing: 10px;
 }
 .arrow svg {
     width: 19px;
@@ -148,6 +137,7 @@ h1 {
     padding-right: 15px;
     position: absolute;
     cursor: pointer;
+    display: block;
 }
 
 .arrow svg {
@@ -170,15 +160,11 @@ h1 {
   }
 
 @media only screen and (max-width: 599px) {
-    .title {
-        font-size: 23px;
-        letter-spacing: 5px;
-        display: block;
-    }
-    h1 {
-        display: block;
+    .header-text {
+        font-size: 16px;
     }
 }
+
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
 .video-container {
     background-color: #151513;
