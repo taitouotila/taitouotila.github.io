@@ -163,6 +163,9 @@ body {
     .header-text {
         font-size: 16px;
     }
+    .frontpage {r;
+        grid-template-columns: 80%;
+    }
 }
 
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
@@ -212,6 +215,10 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
+    .video-container {
+        flex-direction: column;
+        width: 100%;
+    }
     .youtube-link {
         width: 100%;
     }
