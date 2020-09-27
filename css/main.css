@@ -102,6 +102,7 @@ body {
 
 /*---------- HEADER ----------*/
 .frontpage {
+    height: 100%;
     min-height: 100vh;
     display: grid;
     justify-content: center;
@@ -162,9 +163,6 @@ body {
 @media only screen and (max-width: 599px) {
     .header-text {
         font-size: 16px;
-    }
-    .frontpage {
-        grid-template-columns: 80%;
     }
 }
 
@@ -278,7 +276,8 @@ img {
 .about-me {
     background-color: #151513;
     display: grid;
-    min-height: 100%;
+    height: 100%;
+    min-height: 100vh;
     position: relative;
     grid-template-columns: 90%;
     grid-template-rows: 50% 50%;
