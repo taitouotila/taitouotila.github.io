@@ -119,7 +119,7 @@ $(".about").click(function () {
   );
 });
 
-$(".contact-icon").click(function () {
+$(".contact-arrow").click(function () {
   $("html,body").animate(
     {
       scrollTop: $(".contact-form-title").offset().top,
@@ -127,6 +127,7 @@ $(".contact-icon").click(function () {
     750
   );
 });
+
 // Formspree contact form
 
 window.addEventListener("DOMContentLoaded", function () {

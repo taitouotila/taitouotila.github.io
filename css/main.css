@@ -120,21 +120,17 @@ body {
 
 }
 .header-text {
-    margin-top: 8em;
+    margin-top: 9em;
     text-align: center;
     font-size: 23px;
     color: #ffffff;
     letter-spacing: 2px;
 }
 .taito1 {
-    color: #C9AD88
+    color: #C9AD88;
 }
-.arrow svg {
-    width: 19px;
-    height: 19px;
-    overflow: visible;
-}
-.arrow {
+
+.arrow, .contact-arrow {
     fill: none;
     stroke: #C9AD88;
     stroke-width: 3;
@@ -148,7 +144,11 @@ body {
     display: block;
 }
 
-.arrow svg {
+.arrow svg, .contact-arrow svg {
+    width: 19px;
+    height: 19px;
+    overflow: visible;
+
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -161,7 +161,9 @@ body {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .arrow svg:hover, .arrow svg:focus, .arrow svg:active {
+  
+  .arrow svg:hover, .arrow svg:focus, .arrow svg:active,
+  .contact-arrow svg:hover, .contact-arrow svg:focus, .contact-arrow svg:active {
     stroke: #ffffff;
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
@@ -276,6 +278,7 @@ img {
 	background: url('icon-close-white.png') no-repeat;
 }
 */
+
 /*---------- ABOUT ME ----------*/
 .about-me {
     background-color: #151513;
@@ -287,26 +290,12 @@ img {
     text-align: center;
 }
 .my-info {
-    margin-top: 8em;
+    margin-top: 4em;
     font-size: 23px;
     color: #ffffff;
     text-transform: uppercase;
 }
-.contact-icon {
-    position: absolute;
-    left: 50%;
-    bottom: 40px;
-    margin-left: -20px;
-    cursor: pointer;
-}
-.contact-icon-svg {
-    fill: #C9AD88;
-    width: 35px;
-    height: 35px;
-}
-.contact-icon-svg:hover {
-    fill: #ffffff;
-}
+
 .contact {
     min-height: 100vh;
     display: flex;
@@ -320,9 +309,15 @@ img {
     margin-left: -185px;
     font-size: 18px;
 }
-
+.shadow-line-bot {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 42px 0;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, .4);
+}
 /*---------- CONTACT FORM ----------*/
-.contact-form-title {
+.contact-form-title, .about-me-title {
     color: #ffffff;
     margin:0 auto;
     margin-bottom: 50px;
@@ -405,9 +400,10 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 150px;
 }
 .footer-menu {
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;
     position: relative;
