@@ -220,7 +220,7 @@ img {
 
 @media only screen and (max-width: 800px) {
     .video-container {
-        flex-wrap: nowrap;
+        display: block;
         flex-direction: column;
         width: 100%;
     }
@@ -290,6 +290,16 @@ img {
     position: relative;
     text-align: center;
 }
+.about-me-title {
+    color: #ffffff;
+    margin:0 auto;
+    margin-bottom: 50px;
+    padding-top: 80px;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+}
 .my-info {
     margin-top: 4em;
     font-size: 23px;
@@ -310,6 +320,13 @@ img {
     margin-left: -185px;
     font-size: 18px;
 }
+.shadow-line-top {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding: 42px 0;
+    box-shadow: 0 -30px 30px -20px rgba(0, 0, 0, .4);
+}
 .shadow-line-bot {
     margin-left: auto;
     margin-right: auto;
@@ -317,12 +334,12 @@ img {
     padding: 42px 0;
     box-shadow: 0 30px 30px -20px rgba(0, 0, 0, .4);
 }
+
 /*---------- CONTACT FORM ----------*/
-.contact-form-title, .about-me-title {
+.contact-form-title {
     color: #ffffff;
     margin:0 auto;
     margin-bottom: 50px;
-    padding-top: 70px;
     font-size: 23px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -404,7 +421,7 @@ footer {
     height: 150px;
 }
 .footer-menu {
-    padding-top: 50px;
+    padding-top: 3%;
     display: flex;
     justify-content: space-around;
     position: relative;
