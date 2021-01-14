@@ -13,6 +13,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "brandon_grotesqueregular";
+    src: url('fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('fonts/brandon_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /*---------- GLOBAL ----------*/
 * {
     margin: 0;
@@ -100,7 +107,7 @@ body {
     align-items: center;
 }
 .header {
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 .header-text {
     font-size: 16px;
@@ -115,7 +122,7 @@ body {
     display: inline-block;
     text-align: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
     margin: 2rem 0 1.5rem 0;
     background-color: rgb(21, 21, 19, 0.2);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, .75);
@@ -130,7 +137,7 @@ body {
 .arrow, .contact-arrow {
     fill: none;
     stroke: #C9AD88;
-    stroke-width: 3;
+    stroke-width: 1.5;
     stroke-miterlimit: 10;
     bottom: 1rem;
     position: absolute;
@@ -274,13 +281,14 @@ img {
 .about-me-title {
     color: #ffffff;
     margin-bottom: 50px;
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0 2rem 0;
     font-size: 23px;
     font-weight: 700;
     letter-spacing: 5px;
     text-align: center;
 }
 .my-info {
+    font-family: "brandon_grotesqueregular";
     margin: 0 1rem 0 1rem;
     font-size: 16px;
     color: #FFFFFF;
@@ -338,15 +346,12 @@ img {
     margin-bottom: 55px;
 }
 #my-form, textarea {
-    font-family: "brandon_grotesquemedium", sans-serif;
-    font-size: 18px;
     width: 100%;
 }
 #my-form-button {
     font-family: "brandon_grotesqueblack", sans-serif;
     font-size: 23px;
     color: #ffffff;
-
     box-shadow: 0 0 1px #151513;
     -webkit-transition-property: box-shadow, letter-spacing;
     -webkit-transition-duration: 0.3s, 0.5s;
@@ -356,8 +361,7 @@ img {
 #my-form-button:hover, #my-form-button:focus, #my-form-button:active {
     box-shadow: 0 10px 10px -10px #ffe6c6;
     letter-spacing: 2px;
-  }
-
+}
 #my-form-status {
     color: #C9AD88;
 }
@@ -373,11 +377,10 @@ textarea::-webkit-scrollbar {
 button:hover {
     cursor: pointer;
 }
-
 input, textarea {
-    font-family: "brandon_grotesquemedium", sans-serif;
+    font-family: "brandon_grotesqueregular", sans-serif;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     max-width: 600px;
     resize: none;
 }
@@ -388,7 +391,6 @@ input:-webkit-autofill, select:-webkit-autofill {
   -webkit-text-fill-color: #ffffff;
   transition: background-color 5000s ease-in-out 0s;
 }
-
 /*---------- FOOTER ----------*/
 footer {
     font-size: 18px;
@@ -405,12 +407,10 @@ footer {
     position: relative;
 }
 .copyright {
-    font-family: "brandon_grotesqueblack", sans-serif;
+    font-family: "brandon_grotesquemedium", sans-serif;
     color: #C9AD88;
-    font-size: 18px;
-    font-weight: 700;
-    width: 200px;
-    margin-top: 13px;
+    font-size: 12px;
+    margin-top: 1rem;
     text-align: left;
 }
 .social {
@@ -436,7 +436,7 @@ footer {
     fill: #0077b5;
 }
 .email {
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 .email svg {
     margin-top: 17px;
@@ -448,15 +448,12 @@ footer {
     fill: #ffffff;
 }
 
-@media only screen and (max-width: 820px) {
-    footer {
-        height: 17%;
-    }
+@media only screen and (max-width: 768px) {
     #footerLogo {
         visibility: hidden;
     }
     .footer-menu {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .linkedin {
@@ -466,15 +463,17 @@ footer {
         text-align: center;
     }
 }
+@media only screen and (min-width: 768px) {
 
+}
 /*---------- BACK TO TOP ARROW ----------*/
 .arrow-top {
     fill: none;
     stroke: #C9AD88;
-    stroke-width: 3;
+    stroke-width: 1.5;
     stroke-miterlimit: 10;
-    bottom: 40px;
-    right: 5%;
+    bottom: 1em;
+    right: 1em;
     position: fixed;
     cursor: pointer;
 }
@@ -503,4 +502,3 @@ footer {
     -webkit-transform: rotate(180deg) translateY(15px);
     transform: rotate(180deg) translateY(15px);
   }
-/*---------- NEW THING ----------*/
