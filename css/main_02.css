@@ -25,7 +25,6 @@
     vertical-align: baseline;
     background: transparent;
 }
-
 .clearfix::after {
     content: "";
     clear: both;
@@ -40,42 +39,33 @@ html {
 body {
     background-image: url("/images/TaitoBG.jpg");
     background-color: #151513;
-    background-position: 0px 0px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-@media only screen and (max-width: 820px) {
-    body {
-        background-size: 200%;
-    }
 }
 /*---------- NAVIGATION ----------*/
 .nav {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 5px;
-    margin-top: 4em;
 }
 .menu {
-    flex: 1;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 2rem; 
 }
 .work {
-    width: 100px;
-    margin-top: .8em;
+    width: 33%;
     text-align: center;
-    padding-right: 4em;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 .about {
-    width: 100px;
-    margin-top: .8em;
+    width: 33%;
     text-align: center;
-    padding-left: 4em;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 .nav a {
     color: #ffffff;
@@ -88,25 +78,17 @@ body {
     cursor: pointer;
     fill: #C9AD88;
 }
-.work a, .about a {
-    box-shadow: 0 0 0px #151513;
-    -webkit-transition-property: box-shadow, letter-spacing;
-    -webkit-transition-duration: 0.3s, 0.5s;
-    transition-property: box-shadow, letter-spacing;
-    transition-duration: 0.5s, 0.5s;
-  }
-  .work a:hover, .work a:focus, .work a:active,  .about a:hover, .about a:focus, .about a:active {
-    box-shadow: 0 10px 10px -10px #ffe6c6;
-    letter-spacing: 7px;
-  }
-
-@media only screen and (max-width: 600px) {
-
-    .work {
-        padding-right: 2.5em;
+@media (min-width: 992px) {
+    .work a, .about a {
+        box-shadow: 0 0 0px #151513;
+        -webkit-transition-property: box-shadow, letter-spacing;
+        -webkit-transition-duration: 0.3s, 0.5s;
+        transition-property: box-shadow, letter-spacing;
+        transition-duration: 0.5s, 0.5s;
     }
-    .about {
-        padding-left: 2.5em;
+    .work a:hover, .work a:focus, .work a:active,  .about a:hover, .about a:focus, .about a:active {
+        box-shadow: 0 10px 10px -10px #ffe6c6;
+        letter-spacing: 7px;
     }
 }
 /*---------- HEADER ----------*/
@@ -117,14 +99,16 @@ body {
     align-items: center;
 }
 .header {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
 }
 .header-text {
-    margin-top: 10%;
-    text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     color: #ffffff;
     letter-spacing: 2px;
+    margin: 1rem;
 }
 .taito1 {
     color: #C9AD88;
@@ -134,18 +118,14 @@ body {
     stroke: #C9AD88;
     stroke-width: 3;
     stroke-miterlimit: 10;
-    transform: scale(2.5);
-    bottom: 40px;
-    left: 50%;
-    padding-right: 15px;
+    bottom: 2rem;
     position: absolute;
     cursor: pointer;
-    display: block;
 }
 
 .arrow svg, .contact-arrow svg {
-    width: 19px;
-    height: 19px;
+    width: 50px;
+    height: 50px;
     overflow: visible;
 
     -webkit-transform: translateZ(0);
@@ -160,20 +140,14 @@ body {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  
-  .arrow svg:hover, .arrow svg:focus, .arrow svg:active,
-  .contact-arrow svg:hover, .contact-arrow svg:focus, .contact-arrow svg:active {
-    stroke: #ffffff;
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-
-@media only screen and (max-width: 600px) {
-    .header-text {
-        margin-top: 30%;
+@media (min-width: 992px) {
+    .arrow svg:hover, .arrow svg:focus, .arrow svg:active,
+    .contact-arrow svg:hover, .contact-arrow svg:focus, .contact-arrow svg:active {
+        stroke: #ffffff;
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
     }
 }
-
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
 .video-container {
     background-color: #151513;
@@ -449,7 +423,7 @@ footer {
 .social {
     display: flex;
 }
-.logo {
+#footerLogo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
