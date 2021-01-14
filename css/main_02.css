@@ -99,11 +99,9 @@ body {
     align-items: center;
 }
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+    margin-top: 8rem;
 }
+
 .header-text {
     font-size: 16px;
     color: #ffffff;
@@ -117,8 +115,8 @@ body {
     display: inline-block;
     text-align: center;
     align-items: center;
-    padding: 0.5em;
-    margin: 1.5em 0 1.5em 0;
+    padding: 0.5rem;
+    margin: 2rem 0 1.5rem 0;
     background-color: #151513;
     box-shadow: 0px 5px 25px rgba(0, 0, 0, .75);
 }
