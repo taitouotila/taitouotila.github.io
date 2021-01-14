@@ -5,7 +5,6 @@
          url('fonts/brandon_blk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: "brandon_grotesquemedium";
@@ -14,7 +13,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 /*---------- GLOBAL ----------*/
 * {
     margin: 0;
@@ -58,13 +56,13 @@ body {
 .work {
     width: 33%;
     text-align: center;
-    margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
 }
 .about {
     width: 33%;
     text-align: center;
-    margin-right: 1rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
 }
 .nav a {
@@ -72,11 +70,13 @@ body {
     text-decoration: none;
     position: relative;
 }
-.logo svg {
-    width: 60px;
-    height: auto;
-    cursor: pointer;
-    fill: #C9AD88;
+@media (min-width: 768px) {
+    .logo svg {
+        width: 60px;
+        height: auto;
+        cursor: pointer;
+        fill: #C9AD88;
+    }
 }
 @media (min-width: 992px) {
     .work a, .about a {
@@ -108,10 +108,26 @@ body {
     font-size: 16px;
     color: #ffffff;
     letter-spacing: 2px;
-    margin: 1rem;
+    margin: 0 1rem 0 1rem;
 }
 .taito1 {
     color: #C9AD88;
+}
+.contact-button {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 0.5em;
+    margin: 3em 0 0 0;
+    background-color: #151513;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, .75);
+}
+.contact-button a {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .arrow, .contact-arrow {
     fill: none;
@@ -121,8 +137,8 @@ body {
     bottom: 1rem;
     position: absolute;
     cursor: pointer;
+    width: 100%;
 }
-
 .arrow svg, .contact-arrow svg {
     width: 50px;
     height: 50px;
@@ -155,22 +171,18 @@ body {
     flex-wrap: wrap;
     line-height: 0px;
 }
-
 .youtube-link {
     width: 50%;
     cursor: pointer;
     position: relative;
 }
-
 .youtube-link img:hover {
     opacity:0.3;
     transition: .3s ease;
 }
-
 img {
     width: 100%;
 }
-
 .video-text {
     font-family: "brandon_grotesqueblack", sans-serif;
     color: #ffffff;
@@ -196,7 +208,6 @@ img {
     transition: .5s ease;
     pointer-events: none;
 }
-
 @media only screen and (max-width: 800px) {
     .video-container {
         display: block;
@@ -207,7 +218,6 @@ img {
         width: 100%;
     }
 }
-
 /*---------- YOUTUBE POP-UP FRAME ----------*/
 .grtyoutube-popup {
 	position:fixed;
@@ -217,7 +227,6 @@ img {
 	bottom:0;
 	z-index:99999;
 }
-
 .grtyoutube-popup-content {
 	margin-top:150px;
 	width:95%;
@@ -226,7 +235,6 @@ img {
 	margin-right:auto;
 	position:relative;
 }
-
 .grtyoutube-popup-close {
 	position:absolute;
 	top:-30px;
@@ -237,7 +245,6 @@ img {
 	height:17px;
 	cursor:pointer;
 }
-
 .grtyoutube-iframe {
 	width:100%;
 	height:480px;
@@ -248,17 +255,14 @@ img {
 		height:350px;
 	}
 }
-
 .grtyoutube-dark-theme{
 	background: rgba(0,0,0, 0.85);
 }
-
 /*
 .grtyoutube-dark-theme .grtyoutube-popup-close {
 	background: url('icon-close-white.png') no-repeat;
 }
 */
-
 /*---------- ABOUT ME ----------*/
 .about-me {
     background-color: #151513;
@@ -271,34 +275,25 @@ img {
 }
 .about-me-title {
     color: #ffffff;
-    margin:0 auto;
     margin-bottom: 50px;
-    padding-top: 80px;
+    margin: 2rem 0 1rem 0;
     font-size: 23px;
     font-weight: 700;
     letter-spacing: 5px;
     text-align: center;
 }
 .my-info {
-    padding: 1em;
-    margin-top: 2em;
-    font-size: 23px;
-    color: #ffffff;
+    margin: 0 1rem 0 1rem;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 60vh;
     text-transform: uppercase;
 }
-
 .contact {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
-}
-.contact-below {
-    position: absolute;
-    left: 50%;
-    bottom: 110px;
-    margin-left: -185px;
-    font-size: 18px;
 }
 .shadow-line-top {
     margin-left: auto;
@@ -310,6 +305,7 @@ img {
 .shadow-line-bot {
     margin-left: auto;
     margin-right: auto;
+    margin-top: -3.5rem;
     width: 65%;
     padding: 42px 0;
     box-shadow: 0 30px 30px -20px rgba(0, 0, 0, .4);
@@ -321,10 +317,9 @@ img {
     }
 }
 /*---------- CONTACT FORM ----------*/
-.contact-form-title {
+.contact-title {
     color: #ffffff;
-    margin:0 auto;
-    margin-bottom: 50px;
+    margin: -3rem 0 3rem 0;
     font-size: 23px;
     font-weight: 700;
     letter-spacing: 5px;

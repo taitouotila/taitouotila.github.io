@@ -119,10 +119,19 @@ $(".about").click(function () {
   );
 });
 
+$(".contact-button").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $(".contact").offset().top,
+    },
+    750
+  );
+});
+
 $(".contact-arrow").click(function () {
   $("html,body").animate(
     {
-      scrollTop: $(".contact-form-title").offset().top,
+      scrollTop: $(".contact-title").offset().top,
     },
     750
   );
