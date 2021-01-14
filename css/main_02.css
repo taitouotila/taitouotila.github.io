@@ -38,6 +38,7 @@ body {
     background-image: url("/images/TaitoBG.jpg");
     background-color: #151513;
     background-position: center;
+    background-position-y: -2rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -101,7 +102,6 @@ body {
 .header {
     margin-top: 8rem;
 }
-
 .header-text {
     font-size: 16px;
     color: #ffffff;
