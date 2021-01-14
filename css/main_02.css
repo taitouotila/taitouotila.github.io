@@ -102,7 +102,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 50vh;
 }
 .header-text {
     font-size: 16px;
@@ -118,7 +118,7 @@ body {
     stroke: #C9AD88;
     stroke-width: 3;
     stroke-miterlimit: 10;
-    bottom: 2rem;
+    bottom: 1rem;
     position: absolute;
     cursor: pointer;
 }
