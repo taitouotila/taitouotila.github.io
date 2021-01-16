@@ -104,24 +104,24 @@ body {
     height: 100%;
     min-height: 100vh;
     text-align: center;
-    
 }
 .header {
-    margin-top: 6rem;
+    display: flex;
+    height: 80vh;
+    align-items: center;
 }
-.header-text {
+.header-content {
     font-size: 16px;
     color: #ffffff;
     letter-spacing: 2px;
-    margin: 0 1rem 0 1rem;
+    padding: 0 1.25rem 0 1.25rem; 
+    margin: 0 auto;  
 }
 .taito1 {
     color: #C9AD88;
 }
 .contact-button {
     display: inline-block;
-    text-align: center;
-    align-items: center;
     padding: 0.5rem 0.7rem 0.5rem 0.7rem;
     margin: 2rem 0 1.5rem 0;
     background-color: rgb(21, 21, 19, 0.65);
@@ -167,6 +167,11 @@ body {
         stroke: #ffffff;
         -webkit-transform: translateY(5px);
         transform: translateY(5px);
+    }
+}
+@media (min-width: 568px) {
+    .header {
+        height: 60vh;
     }
 }
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
