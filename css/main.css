@@ -5,7 +5,6 @@
          url('fonts/brandon_blk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: "brandon_grotesquemedium";
@@ -14,7 +13,13 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: "brandon_grotesqueregular";
+    src: url('fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('fonts/brandon_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /*---------- GLOBAL ----------*/
 * {
     margin: 0;
@@ -25,7 +30,6 @@
     vertical-align: baseline;
     background: transparent;
 }
-
 .clearfix::after {
     content: "";
     clear: both;
@@ -40,73 +44,59 @@ html {
 body {
     background-image: url("/images/TaitoBG.jpg");
     background-color: #151513;
-    background-position: 0px 0px;
+    background-position: center;
+    background-position-y: 0rem;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-@media only screen and (max-width: 820px) {
-    body {
-        background-size: 200%;
-    }
 }
 /*---------- NAVIGATION ----------*/
 .nav {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 5px;
-    margin-top: 4em;
 }
 .menu {
-    flex: 1;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 2rem; 
 }
 .work {
-    width: 100px;
-    margin-top: .8em;
+    width: 33%;
     text-align: center;
-    padding-right: 4em;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 .about {
-    width: 100px;
-    margin-top: .8em;
+    width: 33%;
     text-align: center;
-    padding-left: 4em;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 .nav a {
     color: #ffffff;
     text-decoration: none;
     position: relative;
 }
-.logo svg {
-    width: 60px;
-    height: auto;
-    cursor: pointer;
-    fill: #C9AD88;
-}
-.work a, .about a {
-    box-shadow: 0 0 0px #151513;
-    -webkit-transition-property: box-shadow, letter-spacing;
-    -webkit-transition-duration: 0.3s, 0.5s;
-    transition-property: box-shadow, letter-spacing;
-    transition-duration: 0.5s, 0.5s;
-  }
-  .work a:hover, .work a:focus, .work a:active,  .about a:hover, .about a:focus, .about a:active {
-    box-shadow: 0 10px 10px -10px #ffe6c6;
-    letter-spacing: 7px;
-  }
-
-@media only screen and (max-width: 600px) {
-
-    .work {
-        padding-right: 2.5em;
+@media (min-width: 768px) {
+    .logo svg {
+        width: 60px;
+        height: auto;
+        cursor: pointer;
+        fill: #C9AD88;
     }
-    .about {
-        padding-left: 2.5em;
+}
+@media (min-width: 992px) {
+    .work a, .about a {
+        box-shadow: 0 0 0px #151513;
+        -webkit-transition-property: box-shadow, letter-spacing;
+        -webkit-transition-duration: 0.3s, 0.5s;
+        transition-property: box-shadow, letter-spacing;
+        transition-duration: 0.5s, 0.5s;
+    }
+    .work a:hover, .work a:focus, .work a:active,  .about a:hover, .about a:focus, .about a:active {
+        box-shadow: 0 10px 10px -10px #ffe6c6;
+        letter-spacing: 7px;
     }
 }
 /*---------- HEADER ----------*/
@@ -114,41 +104,52 @@ body {
     height: 100%;
     min-height: 100vh;
     text-align: center;
-    align-items: center;
 }
 .header {
-
+    display: flex;
+    height: 80vh;
+    align-items: center;
 }
-.header-text {
-    margin-top: 8em;
-    text-align: center;
-    font-size: 23px;
+.header-content {
+    font-size: 16px;
     color: #ffffff;
     letter-spacing: 2px;
+    padding: 0 1.25rem 0 1.25rem; 
+    margin: 0 auto;  
 }
 .taito1 {
-    color: #C9AD88
+    color: #C9AD88;
 }
-.arrow svg {
-    width: 19px;
-    height: 19px;
-    overflow: visible;
+.contact-button {
+    display: inline-block;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    margin: 2rem 0 1.5rem 0;
+    background-color: rgb(21, 21, 19, 0.65);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, .75);
 }
-.arrow {
+.contact-button a {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.arrow, .contact-arrow {
+    visibility: hidden;
     fill: none;
     stroke: #C9AD88;
-    stroke-width: 3;
+    stroke-width: 1.5;
     stroke-miterlimit: 10;
-    transform: scale(2.5);
-    bottom: 40px;
-    left: 50%;
-    padding-right: 15px;
+    bottom: 1rem;
     position: absolute;
     cursor: pointer;
-    display: block;
+    width: 100%;
 }
+.arrow svg, .contact-arrow svg {
+    width: 50px;
+    height: 50px;
+    overflow: visible;
 
-.arrow svg {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -161,16 +162,19 @@ body {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .arrow svg:hover, .arrow svg:focus, .arrow svg:active {
-    stroke: #ffffff;
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-
-@media only screen and (max-width: 599px) {
-
+@media (min-width: 992px) {
+    .arrow svg:hover, .arrow svg:focus, .arrow svg:active,
+    .contact-arrow svg:hover, .contact-arrow svg:focus, .contact-arrow svg:active {
+        stroke: #ffffff;
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
 }
-
+@media (min-width: 568px) {
+    .header {
+        height: 70vh;
+    }
+}
 /*---------- VIDEO CONTAINER BEHAVIOR ----------*/
 .video-container {
     background-color: #151513;
@@ -215,9 +219,9 @@ img {
     transition: .5s ease;
     pointer-events: none;
 }
-
 @media only screen and (max-width: 800px) {
     .video-container {
+        display: block;
         flex-direction: column;
         width: 100%;
     }
@@ -225,7 +229,6 @@ img {
         width: 100%;
     }
 }
-
 /*---------- YOUTUBE POP-UP FRAME ----------*/
 .grtyoutube-popup {
 	position:fixed;
@@ -235,7 +238,6 @@ img {
 	bottom:0;
 	z-index:99999;
 }
-
 .grtyoutube-popup-content {
 	margin-top:150px;
 	width:95%;
@@ -244,7 +246,6 @@ img {
 	margin-right:auto;
 	position:relative;
 }
-
 .grtyoutube-popup-close {
 	position:absolute;
 	top:-30px;
@@ -255,7 +256,6 @@ img {
 	height:17px;
 	cursor:pointer;
 }
-
 .grtyoutube-iframe {
 	width:100%;
 	height:480px;
@@ -266,11 +266,9 @@ img {
 		height:350px;
 	}
 }
-
 .grtyoutube-dark-theme{
 	background: rgba(0,0,0, 0.85);
 }
-
 /*
 .grtyoutube-dark-theme .grtyoutube-popup-close {
 	background: url('icon-close-white.png') no-repeat;
@@ -282,55 +280,56 @@ img {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 100vh;
+    
     position: relative;
     text-align: center;
 }
-.my-info {
-    margin-top: 8em;
-    font-size: 23px;
+.about-me-title {
     color: #ffffff;
-    text-transform: uppercase;
-}
-.contact-icon {
-    position: absolute;
-    left: 50%;
-    bottom: 40px;
-    margin-left: -20px;
-    cursor: pointer;
-}
-.contact-icon-svg {
-    fill: #C9AD88;
-    width: 35px;
-    height: 35px;
-}
-.contact-icon-svg:hover {
-    fill: #ffffff;
-}
-.contact {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-.contact-below {
-    position: absolute;
-    left: 50%;
-    bottom: 110px;
-    margin-left: -185px;
-    font-size: 18px;
-}
-
-/*---------- CONTACT FORM ----------*/
-.contact-form-title {
-    color: #ffffff;
-    margin:0 auto;
     margin-bottom: 50px;
-    padding-top: 70px;
+    margin: 2rem 0 2rem 0;
     font-size: 23px;
     font-weight: 700;
     letter-spacing: 5px;
     text-align: center;
+}
+.my-info {
+    font-family: "brandon_grotesquemedium";
+    padding: 0 1.25rem 0 1.25rem; 
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 800px) {
+    .my-info {
+        margin-top: 0;
+    }
+}
+/*---------- CONTACT FORM ----------*/
+.contact {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.contact-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+    width: 70%;
+    padding: 1rem;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+.contact-title {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 .contact-form {
     width: 50vw;
@@ -340,22 +339,19 @@ img {
 }
 .contact-form-name, .contact-form-message {
     border-bottom: 2px solid #C9AD88;
-    margin-bottom: 65px;
+    margin-bottom: 2rem;
 }
 .contact-form-email {
     border-bottom: 2px solid #C9AD88;
-    margin-bottom: 55px;
+    margin-bottom: 1rem;
 }
 #my-form, textarea {
-    font-family: "brandon_grotesquemedium", sans-serif;
-    font-size: 18px;
     width: 100%;
 }
 #my-form-button {
     font-family: "brandon_grotesqueblack", sans-serif;
     font-size: 23px;
     color: #ffffff;
-
     box-shadow: 0 0 1px #151513;
     -webkit-transition-property: box-shadow, letter-spacing;
     -webkit-transition-duration: 0.3s, 0.5s;
@@ -365,8 +361,7 @@ img {
 #my-form-button:hover, #my-form-button:focus, #my-form-button:active {
     box-shadow: 0 10px 10px -10px #ffe6c6;
     letter-spacing: 2px;
-  }
-
+}
 #my-form-status {
     color: #C9AD88;
 }
@@ -382,11 +377,10 @@ textarea::-webkit-scrollbar {
 button:hover {
     cursor: pointer;
 }
-
 input, textarea {
     font-family: "brandon_grotesquemedium", sans-serif;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     max-width: 600px;
     resize: none;
 }
@@ -397,7 +391,6 @@ input:-webkit-autofill, select:-webkit-autofill {
   -webkit-text-fill-color: #ffffff;
   transition: background-color 5000s ease-in-out 0s;
 }
-
 /*---------- FOOTER ----------*/
 footer {
     font-size: 18px;
@@ -405,7 +398,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 6rem;
 }
 .footer-menu {
     display: flex;
@@ -413,18 +406,16 @@ footer {
     position: relative;
 }
 .copyright {
-    font-family: "brandon_grotesqueblack", sans-serif;
+    font-family: "brandon_grotesquemedium", sans-serif;
     color: #C9AD88;
-    font-size: 18px;
-    font-weight: 700;
-    width: 200px;
-    margin-top: 13px;
+    font-size: 12px;
+    margin-top: 1rem;
     text-align: left;
 }
 .social {
     display: flex;
 }
-.logo {
+#footerLogo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -444,7 +435,7 @@ footer {
     fill: #0077b5;
 }
 .email {
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 .email svg {
     margin-top: 17px;
@@ -456,15 +447,12 @@ footer {
     fill: #ffffff;
 }
 
-@media only screen and (max-width: 820px) {
-    footer {
-        bottom: 40px;
-    }
+@media only screen and (max-width: 768px) {
     #footerLogo {
         visibility: hidden;
     }
     .footer-menu {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .linkedin {
@@ -474,15 +462,17 @@ footer {
         text-align: center;
     }
 }
+@media only screen and (min-width: 768px) {
 
+}
 /*---------- BACK TO TOP ARROW ----------*/
 .arrow-top {
     fill: none;
     stroke: #C9AD88;
-    stroke-width: 3;
+    stroke-width: 1.5;
     stroke-miterlimit: 10;
-    bottom: 40px;
-    right: 5%;
+    bottom: 1em;
+    right: 1em;
     position: fixed;
     cursor: pointer;
 }
@@ -511,4 +501,3 @@ footer {
     -webkit-transform: rotate(180deg) translateY(15px);
     transform: rotate(180deg) translateY(15px);
   }
-/*---------- NEW THING ----------*/
