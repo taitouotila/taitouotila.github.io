@@ -45,7 +45,7 @@ body {
     background-image: url("/images/TaitoBG.jpg");
     background-color: #151513;
     background-position: center;
-    background-position-y: -2rem;
+    background-position-y: 0rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -295,7 +295,7 @@ img {
 }
 .my-info {
     font-family: "brandon_grotesquemedium";
-    margin: 0 1rem 0 1rem;
+    padding: 0 1.25rem 0 1.25rem; 
     font-size: 16px;
     color: #FFFFFF;
     text-transform: uppercase;
