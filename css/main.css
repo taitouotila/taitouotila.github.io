@@ -42,12 +42,17 @@ html {
     margin: 0;
 }
 body {
-    background-image: url("/images/TaitoBG.jpg");
+    background-image: url("/images/TaitoBG_mobile.jpg");
     background-color: #151513;
     background-position: center;
     background-position-y: 0rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+    body {
+        background-image: url("/images/TaitoBG_desktop.jpg");
+    }
 }
 /*---------- NAVIGATION ----------*/
 .nav {
