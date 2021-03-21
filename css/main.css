@@ -127,12 +127,13 @@ body {
 }
 .contact-button {
     display: inline-block;
-    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
     margin: 2rem 0 1.5rem 0;
-    background-color: rgb(21, 21, 19, 0.65);
-    box-shadow: 4px 4px 8px 0px rgb(0, 0, 0, 1),
-                -4px -4px 8px -3px rgb(255, 255, 255, .3);
-/* box-shadow: 0px 0px 25px rgba(0, 0, 0, .75); */
+    background-color: rgb(21, 21, 19, 0.5);
+    box-shadow: 4px 4px 8px -2px rgb(0, 0, 0, .7),
+                -4px -4px 8px -3px rgb(201, 173, 136, .3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 .contact-button a {
     font-size: 16px;
@@ -175,6 +176,12 @@ body {
         stroke: #ffffff;
         -webkit-transform: translateY(5px);
         transform: translateY(5px);
+    }
+    .contact-button {
+        transition: all .2s ease-in-out;
+    }
+    .contact-button:hover {
+        transform: scale(1.05);
     }
 }
 @media (min-width: 568px) {
@@ -324,11 +331,16 @@ img {
 .contact-wrapper {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
     width: 70%;
     padding: 1rem;
-    box-shadow: 0px 20px 35px rgba(0, 0, 0, .5);
+    /* box-shadow: 0px 20px 35px rgba(0, 0, 0, .5); */
     overflow: hidden;
+    border-radius: 20px;
+    background-color: rgb(21, 21, 19, 0.5);
+    box-shadow: 4px 4px 8px -2px rgb(0, 0, 0, .7),
+                -4px -4px 8px -3px rgb(201, 173, 136, .3);
+    border-radius: 10px;
 }
 .contact-title {
     color: #ffffff;
