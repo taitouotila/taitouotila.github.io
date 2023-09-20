@@ -31,6 +31,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    overflow-y: hidden;
 }
 .clearfix::after {
     content: "";
@@ -44,7 +45,7 @@ html {
     margin: 0;
 }
 body {
-    background-image: url("/images/TaitoBG_mobile.jpg");
+    /* background-image: url("../images/TaitoBG_mobile.jpg"); */
     background-color: #151513;
     background-position: center;
     background-position-y: 0rem;
@@ -53,7 +54,7 @@ body {
 }
 @media (min-width: 992px) {
     body {
-        background-image: url("/images/TaitoBG_desktop.jpg");
+        /* background-image: url("../images/TaitoBG_desktop.jpg"); */
     }
 }
 /*---------- NAVIGATION ----------*/
@@ -124,7 +125,7 @@ body {
     font-size: 16px;
     color: #ffffff;
     letter-spacing: 2px;
-    padding: 0 1.25rem 3rem 1.25rem; 
+    padding: 3rem 1.25rem 0 1.25rem; 
     margin: 0 auto;  
 }
 .taito1 {
